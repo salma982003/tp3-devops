@@ -5,7 +5,7 @@ pipeline {
     }
     
     environment {
-        IMAGE = 'votre_nom_d_utilisateur/monapp'
+        IMAGE = 'salmachaieb66784/monapp'
         TAG = "build-${env.BUILD_NUMBER}"
     }
     
