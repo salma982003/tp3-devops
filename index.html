@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3 DevOps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TP3 DevOps - Jenkins & Docker</h1>
+            <p>Application déployée avec succès !</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>🚀 Pipeline CI/CD</h2>
+                <p>Build → Test → Push → Deploy</p>
+                <div class="info">
+                    <p><strong>Build Number:</strong> ${BUILD_NUMBER}</p>
+                    <p><strong>Date:</strong> <span id="date"></span></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>ISG Sousse - DevOps - 2025/2026</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
